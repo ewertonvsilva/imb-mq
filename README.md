@@ -6,6 +6,11 @@ git clone https://github.com/ibm-messaging/mq-container.git`
 cd mq-container
 ARCH=arm64 make build-devserver
 ```
+export image:
+```
+docker save -o ibm-mq-arm64.tar  ibm-mqadvanced-server-dev:9.3.3.0-arm64
+```
+
 import image:
 
 ```
